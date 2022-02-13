@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Bank</title>
+    <link rel="shortcut icon" href="../image/icon.png" type="image/x-icon">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome <span class="contrast">Rashadul Islam</span></h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-6 w-3/4 mx-auto text-white">
+                <div class="bg-blue-300 p-8 rounded">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h3 class="text-4xl">$<span id="depo-ammount">0.00</span></h3>
+                </div>
+                <div class="bg-green-300 p-8 rounded">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h3 class="text-4xl">$<span id="balance-total">55.90</span></h3>
+                </div>
+                <div class="bg-yellow-300 p-8 rounded">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h3 class="text-4xl">$<span id="with-ammount">0.00</span></h3>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6 w-3/4 mx-auto my-10">
+                <div class="bg-red-300 p-8 rounded">
+                    <h3 class="text-2xl">Please Deposit</h3>
+                    <input type="text" placeholder="Enter Your Deposit amount" name="" id="deposit-amount"
+                        class="px-3 py-1"><br>
+                    <button class="btn my-3" id="deposit-btn">Deposit</button>
+                </div>
+                <div class="bg-orange-300 p-8 rounded">
+                    <h3 class="text-2xl">Please Withdraw</h3>
+                    <input type="text" placeholder="Enter Your Withdraw amount" name="" id="withdraw-amount"
+                        class="px-3 py-1"><br>
+                    <button class="btn my-3" id="withdraw-btn">Withdraw</button>
+                </div>
+            </div>
+            <button class="logout btn" id="logout-btn">Logout</button>
+
+        </section>
+        <section class="second">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Copyright National bank 2022-</p>
+    </footer>
+
+
+
+    <!-- JS link -->
+    <script src="second.js"></script>
+</body>
+
+</html>
